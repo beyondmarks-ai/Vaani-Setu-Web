@@ -61,6 +61,10 @@ export default function Home() {
         }}
       >
         <div className={styles.dashboard}>
+          {/* Decorative Corners for Dashboard */}
+          <img src="/corner.png" className={styles.cornerTopLeft} alt="" />
+          <img src="/corner.png" className={styles.cornerBottomRight} alt="" />
+          
           <div className={styles.dashboardContent}>
             <motion.h1 
               animate={isOpeningPortal ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
